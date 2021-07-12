@@ -75,6 +75,57 @@
                   <use href="./img/ikon/symbol-defs.svg#icon-close-black"></use>
                 </svg>
               </button>
+              <h2 class="modal_title">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
+              <form class="form_user">
+                <div class="form_div">
+                  <label class="form_field" for="name">Имя</label>
+                  <input
+                    class="form_field_text"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+                <div class="form_div">
+                  <label class="form_field" for="tel"> Телефон</label>
+                  <input
+                    class="form_field_text"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                  />
+                </div>
+                <div class="form_div">
+                  <label class="form_field" for="mail">Почта</label>
+                  <input
+                    class="form_field_text"
+                    type="email"
+                    name="mail"
+                    id="mail"
+                  />
+                </div>
+                <div class="form_div">
+                  <label class="form_field" for="comment">Комментарий</label>
+                  <textarea
+                    class="form_comment"
+                    name="comment"
+                    id="comment"
+                    rows="5"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+                <div class="form_police">
+                  <input type="checkbox" name="policy" id="checkbox" />
+                  <label for="checkbox"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <span>Условия договора</span></label
+                  >
+                </div>
+
+                <button class="btn" type="submit">Отправить</button>
+              </form>
             </div>
           </div>
         </div>
@@ -492,6 +543,23 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer_sub">
+          <h4 class="footer_sociale_title">Подпишитесь на рассылку</h4>
+          <div class="footer_sub-cont">
+            <input class="footer_input" type="email" placeholder="E-mail" />
+            <button type="submit" class="footer_btn">
+              Подписаться
+              <span>
+                <svg class="svg_btn">
+                  <use
+                    href="./img/ikon/symbol-defs.svg#icon-icon-send"
+                    width="24"
+                  ></use>
+                </svg>
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </footer>

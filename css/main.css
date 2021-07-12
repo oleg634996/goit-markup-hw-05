@@ -151,7 +151,8 @@ span {
   letter-spacing: 0.06em;
   color: var(--color_white);
   cursor: pointer;
-  padding: 10px 30px;
+  padding: 10px 0px;
+  width: 200px;
   border-radius: 4px;
   border: none;
   margin: auto;
@@ -162,6 +163,7 @@ span {
 .btn:focus {
   background-color: var(--btn_hero);
 }
+/* ==================backdrop============ */
 .backdrop {
   position: fixed;
   top: 0;
@@ -184,6 +186,7 @@ span {
   width: 530px;
   height: 580px;
   background-color: #ffffff;
+  padding: 40px 0px;
 }
 .modal_btn_close {
   position: absolute;
@@ -199,11 +202,56 @@ span {
   background-color: #ffffff;
   cursor: pointer;
   padding: 0px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal_btn_close:hover,
+.modal_btn_close:focus {
+  fill: var(--color_btn_hover);
 }
 
 .modal_icon_close {
   width: 18px;
   height: 18px;
+}
+.form_user {
+  width: 450px;
+  margin: 0 auto;
+}
+.modal_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+.form_div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form_field {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+.form_field_text {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form_comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  resize: none;
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+.form_police {
+  margin-bottom: 30px;
 }
 
 /*СЕКЦЫЯ-2*/
@@ -285,7 +333,7 @@ span {
   color: #ffffff;
 }
 .work_img {
-  display: inline-block;
+  display: block;
 }
 /*СЕКЦЫЯ-TEAM*/
 
@@ -402,7 +450,7 @@ span {
   align-items: baseline;
 }
 .cont_logo {
-  margin-right: 70px;
+  margin-right: 85px;
 }
 .logo_footer {
   margin-bottom: 20px;
@@ -424,6 +472,9 @@ span {
   margin-right: 10px;
 }
 
+.footer_sociale {
+  margin-right: 95px;
+}
 .footer_sociale_title {
   font-weight: 700;
   font-size: 14px;
@@ -457,7 +508,47 @@ span {
   background-color: var(--color_btn_hover);
   fill: #ffffff;
 }
-/* PORTFOLIO*/
+.footer_sub-cont {
+  display: flex;
+}
+.footer_input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding: 15px 0px 15px 15px;
+  color: #ececec;
+  margin-right: 12px;
+  width: 360px;
+}
+.footer_input:focus {
+  outline: none;
+}
+.footer_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  padding: 10px 28px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.svg_btn {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+/*============= PORTFOLIO=================*/
 
 .portfoli {
   font-size: 16px;
